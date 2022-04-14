@@ -6,8 +6,8 @@ print(message)
 message = "Hello Python Crash Course world!"
 print(message)
 
-message = "Hello Python Crash Course reader!"
-print(message)
+# message = "Hello Python Crash Course reader!"
+# print(mesage)
 
-message = "Hello Python Crash Course reader...test!"
+message = "Hello Python Crash Course reader!"
 print(message)
