@@ -1,4 +1,4 @@
-# more_guests.py
+# shrinking_guest_list.py
 
 guest_list = ['Georgia','Elizabeth','Ina','Kathleen']
 message = f"Hi {guest_list[0].title()}, I would like you to join me at dinner this coming Friday."
@@ -41,3 +41,23 @@ message = f"Hi {guest_list[5].title()}, I would like you to join me at dinner th
 print(message)
 message = f"Hi {guest_list[6].title()}, I would like you to join me at dinner this coming Friday."
 print(message)
+
+message = "\nSorry, I just discovered that my new dinner table will not arrive in time. I can only invite two people for dinner."
+print(message)
+last_guest = guest_list.pop()
+print(f"Hi {last_guest}, I am unable to invite you to dinner this time. My sincerest apologies. I will be sure to include you on future invites once my new table arrives.")
+last_guest = guest_list.pop()
+print(f"Hi {last_guest.title()}, I am unable to invite you to dinner this time. My sincerest apologies. I will be sure to include you on future invites once my new table arrives.")
+last_guest = guest_list.pop()
+print(f"Hi {last_guest.title()}, I am unable to invite you to dinner this time. My sincerest apologies. I will be sure to include you on future invites once my new table arrives.")
+last_guest = guest_list.pop()
+print(f"Hi {last_guest.title()}, I am unable to invite you to dinner this time. My sincerest apologies. I will be sure to include you on future invites once my new table arrives.")
+last_guest = guest_list.pop()
+print(f"Hi {last_guest.title()}, I am unable to invite you to dinner this time. My sincerest apologies. I will be sure to include you on future invites once my new table arrives.")
+print(guest_list)
+print(f"Hi {guest_list[0].title()}, I wanted to let you know that I needed to adjust my guest list due to my new table not arriving on time, but I wanted to confirm that you are still invited to my dinner party.")
+print(f"Hi {guest_list[1].title()}, I wanted to let you know that I needed to adjust my guest list due to my new table not arriving on time, but I wanted to confirm that you are still invited to my dinner party.")
+
+del guest_list[0]
+del guest_list[0]
+print(guest_list)

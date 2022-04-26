@@ -60,3 +60,10 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
 print(motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+# motorcycles = ['honda','yamaha','suzuki']
+# print(motorcycles[3])
+
+# motorcycles = []
+# print(motorcycles[-1])
+# print(len(motorcycles))
