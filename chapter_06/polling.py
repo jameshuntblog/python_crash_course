@@ -1,3 +1,5 @@
+# polling.py
+
 # favorite_languages.py
 
 favorite_languages = {
@@ -5,6 +7,7 @@ favorite_languages = {
     'sarah':'c',
     'edward':'ruby',
     'phil':'python',
+    'Ina':'R'
     }
 
 print(favorite_languages)
@@ -43,14 +46,10 @@ for language in set(favorite_languages.values()):
 languages = {'python', 'ruby', 'python', 'c'}
 print(languages)
 
-favorite_languages = {
-    'jen':['python','ruby'],
-    'sarah':['c'],
-    'edward':['ruby','go'],
-    'phil':['python','haskell']
-    }
-
-for name,languages in favorite_languages.items():
-    print(f"\n{name.title()}'s favorite languages are:")
-    for language in languages:
-        print(f"\t{language.title()}")
+people = ['jen','James','Ina','Georgia','Betty','Bella','Laser']
+for person in people:
+    if person in favorite_languages.keys():
+        print(f"\n{person.title()}, thank you for responding to the languages"\
+        " poll.")
+    else:
+        print(f"\n{person.title()}, please complete this poll.")
