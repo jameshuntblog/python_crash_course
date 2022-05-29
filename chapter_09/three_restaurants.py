@@ -16,15 +16,22 @@ class Restaurant:
         """Announce that the restaurant is open."""
         print(f"{self.restaurant_name.title()} is open.")
 
+# Make an instance called restaurant.
 restaurant = Restaurant("Le Cigar Volant","French")
+
+# Print the two attributes individually.
 print(restaurant.restaurant_name)
 print(restaurant.cuisine_type)
+
+# Call both methods in the class for the instance.
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
 
+# Create two additional instances of the class.
 restaurant_two = Restaurant("Chez Henri","French")
 restaurant_three = Restaurant("Cheers","Bar")
 
+# Call describe_restaurant() for each instances.
 restaurant.describe_restaurant()
 restaurant_two.describe_restaurant()
 restaurant_three.describe_restaurant()

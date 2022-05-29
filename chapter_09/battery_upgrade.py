@@ -1,6 +1,4 @@
-"""A class that can be used to represent gas and electric cars."""
-
-# car.py
+# battery_upgrade.py
 
 class Car:
     """A simple attempt to represent a car."""
@@ -60,6 +58,13 @@ class Battery:
 
         print(f"This car can go about {range} miles on a full charge.")
 
+    def upgrade_battery(self):
+        if self.battery_size == 100:
+            self.battery_size = 100
+        else:
+            self.battery_size = 100
+
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
@@ -84,11 +89,15 @@ class ElectricCar(Car):
     #     """Print a statement describing the battery size."""
     #     print(f"This car has a {self.battery_size}-kWh battery.")
 
-# my_tesla = ElectricCar('tesla', 'model S', 2019)
-# print(my_tesla.get_descriptive_name())
-# my_tesla.fill_gas_tank()
-# my_tesla.battery.describe_battery()
-# my_tesla.battery.get_range()
+my_tesla = ElectricCar('tesla', 'model S', 2019)
+print(my_tesla.get_descriptive_name())
+my_tesla.fill_gas_tank()
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
+print("Upgrading battery...")
+my_tesla.battery.upgrade_battery()
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
 
 # my_mustang = Car('Ford', 'Mustang', 1992)
 # print(my_mustang.get_descriptive_name())
