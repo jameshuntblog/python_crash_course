@@ -5,20 +5,6 @@ class Dog:
     # does."
     """A simple attempt to model a dog."""
 
-    # The __init__ method is a special method that Python runs 
-    # automatically whenever a new instance of the class is created.
-    
-    # The __init__() method is being defined with three parameters, 
-    # self, name and age.
-    
-    # The self parameter is required in the method definition, and 
-    # it must come first before the other parameters.
-
-    # Every method call associated with an instance automatically 
-    # passes self, which is a reference to the instance itself; it 
-    # gives the individual instance access to the attributes and 
-    # methods of the class.
-
     def __init__(self, name, age):
         """Initialize name and age attributes."""
         # The two variables defined below each have the prefix self.

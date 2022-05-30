@@ -1,3 +1,5 @@
+"""A class that can be used to represent a restaurant."""
+
 # restaurant.py
 
 class Restaurant:
@@ -15,14 +17,3 @@ class Restaurant:
     def open_restaurant(self):
         """Announce that the restaurant is open."""
         print(f"{self.restaurant_name.title()} is open.")
-
-# Make an instance called restaurant.
-restaurant = Restaurant("Le Cigar Volant","French")
-
-# Print the two attributes individually.
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-
-# Call both methods in the class for the instance.
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
