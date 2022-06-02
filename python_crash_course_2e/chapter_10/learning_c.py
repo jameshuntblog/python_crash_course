@@ -1,7 +1,7 @@
 # learning_c.py
 
-file_path = 'C:\\Users\\James Hunt\\Documents\\GitHub\\python_crash_course\\'\
-    'chapter_10\\learning_python.txt'
+file_path = 'C:\\Users\\James Hunt\\Documents\\GitHub\\python_learning\\'\
+    'python_crash_course_2e\\chapter_10\\learning_python.txt'
 
 # Print the contents once by reading the entire file.
 with open(file_path) as file_object:

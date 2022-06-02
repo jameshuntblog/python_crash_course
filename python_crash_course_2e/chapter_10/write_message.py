@@ -1,7 +1,7 @@
 # write_message.py
 
-filename = 'C:\\Users\\James Hunt\\Documents\\GitHub\\python_crash_course\\'\
-    'chapter_10\\programming.txt'
+filename = 'C:\\Users\\James Hunt\\Documents\\GitHub\\python_learning\\'\
+        'python_crash_course_2e\\chapter_10\\programming.txt'
 
 with open(filename, 'w') as file_object:
     file_object.write("I love programming.\n")

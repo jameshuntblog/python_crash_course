@@ -1,8 +1,8 @@
 # pi_string.py
 import math
 
-file_path = 'C:\\Users\\James Hunt\\Documents\\GitHub\\python_crash_course\\'\
-    'chapter_10\\pi_million_digits.txt'
+file_path = 'C:\\Users\\James Hunt\\Documents\\GitHub\\python_learning\\'\
+        'python_crash_course_2e\\chapter_10\\pi_million_digits.txt'
 
 with open(file_path) as file_object:
     lines = file_object.readlines()
