@@ -68,6 +68,16 @@ class Raindrops:
             if drop.rect.top >= 1000:
                 self.drops.remove(drop)
 
+        if len(self.drops) <= 59:
+            drop = Drop(self)
+            drop_width, drop_height = drop.rect.size
+            available_space_x = self.screen_width - (2 * drop_width)
+            number_drops_x = available_space_x // (2 * drop_width)
+
+            # Create the full pattern of drops.
+            for drop_number in range(number_drops_x):
+                self._create_drop(drop_number, 1)
+
     def _create_drop(self, drop_number, row_number):
         """Create a star and place it in the row."""
         drop = Drop(self)
