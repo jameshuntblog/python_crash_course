@@ -1,0 +1,2 @@
+famous_quote = "Man should not consider his material possession his own, but as common to all, so as to share them without hesitation when others are in need."
+print(f'Thomas Aquinas once said, "{famous_quote}"')
