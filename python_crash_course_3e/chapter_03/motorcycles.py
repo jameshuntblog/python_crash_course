@@ -44,12 +44,13 @@ print(motorcycles)
 motorcycles.remove('ducati')
 print(motorcycles)
 
-motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati', 'ducati', 'ducati', 'ducati']
 print(motorcycles)
 print(motorcycles.count('ducati'))
 
-too_expensive = 'ducati'
-motorcycles.remove(too_expensive)
-print(motorcycles)
-print(f"\nA {too_expensive.title()} is too expensive for me.")
-print(motorcycles.count('ducati'))
+while motorcycles.count('ducati') > 0:
+    too_expensive = 'ducati'
+    motorcycles.remove(too_expensive)
+    print(motorcycles)
+    print(f"\nA {too_expensive.title()} is too expensive for me.")
+    print(motorcycles.count('ducati'))
