@@ -1,0 +1,1 @@
+locations = ['Rome', 'The Holy Land', 'Lourdes', 'Fatima', 'Santiago de Compostela']
